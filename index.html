@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-in-out forwards;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        main {
+            padding: 2em;
+        }
+        section {
+            background-color: white;
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5em;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 1.5em;
+        }
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            transition: width 0.3s ease;
+        }
+        h2:hover::after {
+            width: 80%;
+        }
+        li {
+            list-style: none;
+            background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcgMi41YS43NS43NSAwIDEgMCAwIDEuNWguNzVDMTkuMyAzIDIwIDMuNyAyMCA0LjV2MTBjMCAuOCAuNyAxLjUgMS41IDEuNWguNzVjLjguMCAxLjUtLjcgMS41LTEuNXYtMTBjMC0xLjQtMS4xLTIuNS0yLjUtMi41aC0xMS43NWMtMS40IDAtMi41IDEuMS0yLjUgMi41djEwYzAgMS40IDEuMSAyLjUgMi41IDIuNWguNzVjLjggMCAxLjUtLjcgMS41LTEuNXYtMTBjMC0xLjQuMS0yLjUgMi41LTIuNXptLTIuMSA4bC02LjcgNi43LS42LS42IDQuNS00LjV6Ii8+PC9zdmc=') no-repeat left center;
+            padding-left: 1.5em;
+            margin-bottom: 0.5em;
+            position: relative;
+            color: #007bff;
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #007bff;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+	<img src="123.png">
+        <h1>김지후의 개인 홈페이지</h1>
+    </header>
+
+    <main>
+        <!-- 이름 및 연락처 -->
+        <section>
+            <h2>Contact Information</h2>
+            <p><strong>Name:</strong>김지후</p>
+            <p><strong>Email:</strong>kimjihoo0525@gmail.com</p>
+        </section>
+        
+        <!-- 기술 스택 -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Python</li>
+                <li>git</li>
+            </ul>
+        </section>
+        
+        <!-- 학력 정보 -->
+        <section>
+            <h2>Education</h2>
+            <p><strong>대학 : </strong> 동양미래대</p>
+            <p><strong>전공 : </strong> 컴퓨터소프트웨어공학과</p>
+            <p><strong>모교 : </strong> 신송고등학교</p>
+        </section>
+        
+        <!-- 기술 개발 경험 -->
+        <section>
+            <h2>기술 개발 경험</h2>
+            <p><strong>html 조별과제</strong> 메인 페이지 담당(2024)</p>
+            <ul>
+                <li>메인 페이지의 구상</li>
+                <li>메인 페이지의 제작</li>
+            </ul>
+        </section>
+        
+	<!-- 관심 기술 분야 -->
+<section>
+    <h2>Interests</h2>
+    <ul>
+        <li>프론트 엔드</li>
+        <li>딥 러닝</li>
+        <li>백 엔드</li>
+        <li>데이터베이스</li>
+    </ul>
+</section>
+
+<!-- 기타 정보 -->
+<section>
+    <h2>기타 정보</h2>
+    <p><strong>Languages:</strong> 한국어</p>
+    <p><strong>Hobbies:</strong> 게임, 독서, 글 쓰기, 맛집 탐방</p>
+</section>
